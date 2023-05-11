@@ -246,6 +246,42 @@ void PangolinWindowImpl::CreateDisplayLayout() {
         .AddDisplay(d_plot);
 }
 
+// Draw grid plane on XOY plane
+void DrawGridPlane() {
+    const float kGridSize = 500.0;
+    const float kGridStep = 5.0;
+    const float kGridLineWidth = 2.0;
+    const float kGridColorR = 0.8;
+    const float kGridColorG = 0.8;
+    const float kGridColorB = 0.8;
+    const float kGridColorA = 0.8;
+
+    // draw xyz axis
+    glLineWidth(2.0);
+    glBegin(GL_LINES);
+    glColor4f(1.0, 0.0, 0.0, 0.8);
+    glVertex3f(0, 0, 0);
+    glVertex3f(kGridStep * 10.0, 0, 0);
+    glColor4f(0.0, 1.0, 0.0, 0.8);
+    glVertex3f(0, 0, 0);
+    glVertex3f(0, kGridStep * 10.0, 0);
+    glColor4f(0.0, 0.0, 1.0, 0.8);
+    glVertex3f(0, 0, 0);
+    glVertex3f(0, 0, kGridStep * 10.0);
+    glEnd();
+
+    glLineWidth(kGridLineWidth);
+    glColor4f(kGridColorR, kGridColorG, kGridColorB, kGridColorA);
+    glBegin(GL_LINES);
+    for (float i = -kGridSize; i <= kGridSize; i += kGridStep) {
+        glVertex3f(i, -kGridSize, 0);
+        glVertex3f(i, kGridSize, 0);
+        glVertex3f(-kGridSize, i, 0);
+        glVertex3f(kGridSize, i, 0);
+    }
+    glEnd();
+}
+
 void PangolinWindowImpl::Render() {
     // fetch the context and bind it to this thread
     pangolin::BindToContext(win_name_);
@@ -260,6 +296,7 @@ void PangolinWindowImpl::Render() {
     pangolin::Var<bool> menu_follow_loc("menu.Follow", false, true);
     pangolin::Var<bool> menu_reset_3d_view("menu.Reset 3D View", false, false);
     pangolin::Var<bool> menu_reset_front_view("menu.Set to front View", false, false);
+    pangolin::Var<bool> menu_reset_right_view("menu.Set to right View", false, false);
 
     // display layout
     CreateDisplayLayout();
@@ -281,6 +318,10 @@ void PangolinWindowImpl::Render() {
             s_cam_main_.SetModelViewMatrix(pangolin::ModelViewLookAt(-50, 0, 10, 50, 0, 10, pangolin::AxisZ));
             menu_reset_front_view = false;
         }
+        if (menu_reset_right_view) {
+            s_cam_main_.SetModelViewMatrix(pangolin::ModelViewLookAt(0, -50, 10, 0, 50, 10, pangolin::AxisZ));
+            menu_reset_right_view = false;
+        }
 
         // Render pointcloud
         RenderClouds();
@@ -289,6 +330,8 @@ void PangolinWindowImpl::Render() {
         if (following_loc_) {
             s_cam_main_.Follow(current_pose_.matrix());
         }
+
+        DrawGridPlane();
 
         // Swap frames and Process Events
         pangolin::FinishFrame();
