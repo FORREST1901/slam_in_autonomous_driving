@@ -13,7 +13,7 @@
 #include "common/point_cloud_utils.h"
 #include "keyframe.h"
 
-DEFINE_string(map_path, "./data/ch9/", "导出数据的目录");
+DEFINE_string(map_path, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/", "导出数据的目录");
 DEFINE_double(voxel_size, 0.1, "导出地图分辨率");
 
 int main(int argc, char** argv) {
@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
     using namespace sad;
 
     std::map<IdType, KFPtr> keyframes;
-    if (!LoadKeyFrames("./data/ch9/keyframes.txt", keyframes)) {
+    if (!LoadKeyFrames("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/keyframes.txt", keyframes)) {
         LOG(ERROR) << "failed to load keyframes";
         return 0;
     }
@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
     // 逻辑和dump map差不多，但每个点个查找它的网格ID，没有的话会创建
     for (auto& kfp : keyframes) {
         auto kf = kfp.second;
-        kf->LoadScan("./data/ch9/");
+        kf->LoadScan("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/");
 
         CloudPtr cloud_trans(new PointCloudType);
         pcl::transformPointCloud(*kf->cloud_, *cloud_trans, kf->opti_pose_2_.matrix());
@@ -71,16 +71,16 @@ int main(int argc, char** argv) {
 
     // 存储点云和索引文件
     LOG(INFO) << "saving maps, grids: " << map_data.size();
-    std::system("mkdir -p ./data/ch9/map_data/");
-    std::system("rm -rf ./data/ch9/map_data/*");  // 清理一下文件夹
-    std::ofstream fout("./data/ch9/map_data/map_index.txt");
+    std::system("mkdir -p /home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/map_data/");
+    std::system("rm -rf /home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/map_data/*");  // 清理一下文件夹
+    std::ofstream fout("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/map_data/map_index.txt");
     for (auto& dp : map_data) {
         fout << dp.first[0] << " " << dp.first[1] << std::endl;
         dp.second->width = dp.second->size();
         VoxelGrid(dp.second, 0.1);
 
         pcl::io::savePCDFileBinaryCompressed(
-            "./data/ch9/map_data/" + std::to_string(dp.first[0]) + "_" + std::to_string(dp.first[1]) + ".pcd",
+            "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/map_data/" + std::to_string(dp.first[0]) + "_" + std::to_string(dp.first[1]) + ".pcd",
             *dp.second);
     }
     fout.close();

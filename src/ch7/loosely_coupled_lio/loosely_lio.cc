@@ -104,7 +104,7 @@ void LooselyLIO::Undistort() {
     SE3 T_end = SE3(imu_state.R_, imu_state.p_);
 
     if (options_.save_motion_undistortion_pcd_) {
-        pcl::io::savePCDFileBinary("./data/ch7/before_undist.pcd", *cloud);
+        pcl::io::savePCDFileBinary("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/before_undist.pcd", *cloud);
     }
 
     /// 将所有点转到最后时刻状态上
@@ -127,7 +127,7 @@ void LooselyLIO::Undistort() {
     scan_undistort_ = cloud;
 
     if (options_.save_motion_undistortion_pcd_) {
-        pcl::io::savePCDFileBinary("./data/ch7/after_undist.pcd", *cloud);
+        pcl::io::savePCDFileBinary("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/after_undist.pcd", *cloud);
     }
 }
 

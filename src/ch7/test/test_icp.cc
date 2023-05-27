@@ -14,9 +14,9 @@
 #include "ch7/ndt_3d.h"
 #include "common/sys_utils.h"
 
-DEFINE_string(source, "./data/ch7/EPFL/kneeling_lady_source.pcd", "第1个点云路径");
-DEFINE_string(target, "./data/ch7/EPFL/kneeling_lady_target.pcd", "第2个点云路径");
-DEFINE_string(ground_truth_file, "./data/ch7/EPFL/kneeling_lady_pose.txt", "真值Pose");
+DEFINE_string(source, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/EPFL/kneeling_lady_source.pcd", "第1个点云路径");
+DEFINE_string(target, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/EPFL/kneeling_lady_target.pcd", "第2个点云路径");
+DEFINE_string(ground_truth_file, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/EPFL/kneeling_lady_pose.txt", "真值Pose");
 
 int main(int argc, char** argv) {
     google::InitGoogleLogging(argv[0]);
@@ -55,7 +55,7 @@ int main(int argc, char** argv) {
                           << ", " << pose.translation().transpose();
                 sad::CloudPtr source_trans(new sad::PointCloudType);
                 pcl::transformPointCloud(*source, *source_trans, pose.matrix().cast<float>());
-                pcl::io::savePCDFileBinaryCompressed("./data/ch7/icp_trans.pcd", *source_trans);
+                pcl::io::savePCDFileBinaryCompressed("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/icp_trans.pcd", *source_trans);
             } else {
                 LOG(ERROR) << "align failed.";
             }
@@ -76,7 +76,7 @@ int main(int argc, char** argv) {
                           << ", " << pose.translation().transpose();
                 sad::CloudPtr source_trans(new sad::PointCloudType);
                 pcl::transformPointCloud(*source, *source_trans, pose.matrix().cast<float>());
-                pcl::io::savePCDFileBinaryCompressed("./data/ch7/icp_plane_trans.pcd", *source_trans);
+                pcl::io::savePCDFileBinaryCompressed("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/icp_plane_trans.pcd", *source_trans);
             } else {
                 LOG(ERROR) << "align failed.";
             }
@@ -97,7 +97,7 @@ int main(int argc, char** argv) {
                            << ", " << pose.translation().transpose();
                 sad::CloudPtr source_trans(new sad::PointCloudType);
                 pcl::transformPointCloud(*source, *source_trans, pose.matrix().cast<float>());
-                pcl::io::savePCDFileBinaryCompressed("./data/ch7/icp_line_trans.pcd", *source_trans);
+                pcl::io::savePCDFileBinaryCompressed("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/icp_line_trans.pcd", *source_trans);
             } else {
                 LOG(ERROR) << "align failed.";
             }
@@ -122,7 +122,7 @@ int main(int argc, char** argv) {
                            << pose.translation().transpose();
                 sad::CloudPtr source_trans(new sad::PointCloudType);
                 pcl::transformPointCloud(*source, *source_trans, pose.matrix().cast<float>());
-                pcl::io::savePCDFileBinaryCompressed("./data/ch7/ndt_trans.pcd", *source_trans);
+                pcl::io::savePCDFileBinaryCompressed("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/ndt_trans.pcd", *source_trans);
             } else {
                 LOG(ERROR) << "align failed.";
             }
@@ -140,7 +140,7 @@ int main(int argc, char** argv) {
             SE3f T = SE3f(icp_pcl.getFinalTransformation());
             LOG(INFO) << "pose from icp pcl: " << T.so3().unit_quaternion().coeffs().transpose() << ", "
                       << T.translation().transpose();
-            pcl::io::savePCDFileBinaryCompressed("./data/ch7/pcl_icp_trans.pcd", *output_pcl);
+            pcl::io::savePCDFileBinaryCompressed("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/pcl_icp_trans.pcd", *output_pcl);
 
             // 计算GT pose差异
             double pose_error = (gt_pose.inverse() * T.inverse().cast<double>()).log().norm();
@@ -160,7 +160,7 @@ int main(int argc, char** argv) {
             SE3f T = SE3f(ndt_pcl.getFinalTransformation());
             LOG(INFO) << "pose from ndt pcl: " << T.so3().unit_quaternion().coeffs().transpose() << ", "
                       << T.translation().transpose() << ', trans: ' << ndt_pcl.getTransformationProbability();
-            pcl::io::savePCDFileBinaryCompressed("./data/ch7/pcl_ndt_trans.pcd", *output_pcl);
+            pcl::io::savePCDFileBinaryCompressed("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/pcl_ndt_trans.pcd", *output_pcl);
             LOG(INFO) << "score: " << ndt_pcl.getTransformationProbability();
 
             // 计算GT pose差异

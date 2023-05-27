@@ -14,7 +14,7 @@
 /// 本程序以ULHK数据集为例
 /// 测试以NDT为主的Lidar Odometry
 /// 若使用PCL NDT的话，会重新建立NDT树
-DEFINE_string(bag_path, "./dataset/sad/ulhk/test2.bag", "path to rosbag");
+DEFINE_string(bag_path, "/media/wlxing/Data/ForLinux/Data/sad/ulhk/test2.bag", "path to rosbag");
 DEFINE_string(dataset_type, "ULHK", "NCLT/ULHK/KITTI/WXB_3D");  // 数据集类型
 DEFINE_bool(use_pcl_ndt, false, "use pcl ndt to align?");
 DEFINE_bool(use_ndt_nearby_6, false, "use ndt nearby 6?");
@@ -49,7 +49,7 @@ int main(int argc, char** argv) {
 
     if (FLAGS_display_map) {
         // 把地图存下来
-        ndt_lo.SaveMap("./data/ch7/map.pcd");
+        ndt_lo.SaveMap("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/map.pcd");
     }
 
     sad::common::Timer::PrintAll();

@@ -11,7 +11,7 @@
 #include "common/timer/timer.h"
 
 /// 这里需要vlp16的数据，用wxb的
-DEFINE_string(bag_path, "./dataset/sad/wxb/test1.bag", "path to wxb bag");
+DEFINE_string(bag_path, "/media/wlxing/Data/ForLinux/Data/sad/wxb/test1.bag", "path to wxb bag");
 
 int main(int argc, char** argv) {
     google::InitGoogleLogging(argv[0]);
@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
     // 测试角点和平面点的提取
     sad::FeatureExtraction feature_extraction;
 
-    system("rm -rf ./data/ch7/*.pcd");
+    system("rm -rf /home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/*.pcd");
 
     sad::RosbagIO bag_io(fLS::FLAGS_bag_path);
     bag_io
@@ -34,8 +34,8 @@ int main(int argc, char** argv) {
                                    "Feature Extraction");
                                LOG(INFO) << "original pts:" << cloud->size() << ", corners: " << pcd_corner->size()
                                          << ", surf: " << pcd_surf->size();
-                               pcl::io::savePCDFileBinary("./data/ch7/corner.pcd", *pcd_corner);
-                               pcl::io::savePCDFileBinary("./data/ch7/surf.pcd", *pcd_surf);
+                               pcl::io::savePCDFileBinary("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/corner.pcd", *pcd_corner);
+                               pcl::io::savePCDFileBinary("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/surf.pcd", *pcd_surf);
                                return true;
                            })
         .Go();

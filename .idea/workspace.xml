@@ -28,6 +28,7 @@
       <config projectName="slam_in_auto_driving" targetName="dynamic_reconfigure_generate_messages_py" />
       <config projectName="slam_in_auto_driving" targetName="tf2_msgs_generate_messages_py" />
       <config projectName="slam_in_auto_driving" targetName="livox_ros_driver_generate_messages_py" />
+      <config projectName="slam_in_auto_driving" targetName="test_mr_matching" />
       <config projectName="slam_in_auto_driving" targetName="nodelet_generate_messages_eus" />
       <config projectName="slam_in_auto_driving" targetName="tf2_msgs_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="dynamic_reconfigure_gencfg" />
@@ -37,29 +38,46 @@
       <config projectName="slam_in_auto_driving" targetName="run_eskf_gins" />
       <config projectName="slam_in_auto_driving" targetName="monitor_msgs_gencpp" />
       <config projectName="slam_in_auto_driving" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="slam_in_auto_driving" targetName="run_gen_simu_data" />
       <config projectName="slam_in_auto_driving" targetName="livox_ros_driver_generate_messages" />
       <config projectName="slam_in_auto_driving" targetName="ui_test" />
+      <config projectName="slam_in_auto_driving" targetName="slam_in_auto_driving.ch10" />
       <config projectName="slam_in_auto_driving" targetName="velodyne_msgs_generate_messages_eus" />
+      <config projectName="slam_in_auto_driving" targetName="test_loam_odom" />
       <config projectName="slam_in_auto_driving" targetName="monitor_msgs_genlisp" />
       <config projectName="slam_in_auto_driving" targetName="roscpp_generate_messages_nodejs" />
       <config projectName="slam_in_auto_driving" targetName="monitor_msgs_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="actionlib_generate_messages_py" />
       <config projectName="slam_in_auto_driving" targetName="bond_generate_messages_lisp" />
+      <config projectName="slam_in_auto_driving" targetName="slam_in_auto_driving.ch5" />
+      <config projectName="slam_in_auto_driving" targetName="slam_in_auto_driving.ch6" />
       <config projectName="slam_in_auto_driving" targetName="bond_generate_messages_py" />
       <config projectName="slam_in_auto_driving" targetName="slam_in_auto_driving.ch3" />
+      <config projectName="slam_in_auto_driving" targetName="slam_in_auto_driving.ch4" />
+      <config projectName="slam_in_auto_driving" targetName="point_cloud_load_and_vis" />
+      <config projectName="slam_in_auto_driving" targetName="slam_in_auto_driving.ch9" />
       <config projectName="slam_in_auto_driving" targetName="_livox_ros_driver_generate_messages_check_deps_CustomMsg" />
+      <config projectName="slam_in_auto_driving" targetName="test_nn" />
+      <config projectName="slam_in_auto_driving" targetName="slam_in_auto_driving.ch7" />
       <config projectName="slam_in_auto_driving" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="slam_in_auto_driving" targetName="slam_in_auto_driving.ch8" />
       <config projectName="slam_in_auto_driving" targetName="tf2_msgs_generate_messages_eus" />
       <config projectName="slam_in_auto_driving" targetName="nodelet_generate_messages_cpp" />
+      <config projectName="slam_in_auto_driving" targetName="test_inc_ndt_lo" />
       <config projectName="slam_in_auto_driving" targetName="tf_generate_messages_cpp" />
       <config projectName="slam_in_auto_driving" targetName="livox_ros_driver_geneus" />
       <config projectName="slam_in_auto_driving" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="slam_in_auto_driving" targetName="test_preintegration" />
+      <config projectName="slam_in_auto_driving" targetName="test_loosely_lio" />
       <config projectName="slam_in_auto_driving" targetName="slam_in_auto_driving.common" />
       <config projectName="slam_in_auto_driving" targetName="livox_ros_driver_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="velodyne_msgs_generate_messages_py" />
+      <config projectName="slam_in_auto_driving" targetName="test_2d_mapping" />
       <config projectName="slam_in_auto_driving" targetName="roscpp_generate_messages_eus" />
+      <config projectName="slam_in_auto_driving" targetName="linear_fitting" />
       <config projectName="slam_in_auto_driving" targetName="rosgraph_msgs_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="tests" />
+      <config projectName="slam_in_auto_driving" targetName="run_gins_pre_integ" />
       <config projectName="slam_in_auto_driving" targetName="bond_generate_messages_nodejs" />
       <config projectName="slam_in_auto_driving" targetName="geometry_msgs_generate_messages_cpp" />
       <config projectName="slam_in_auto_driving" targetName="geometry_msgs_generate_messages_lisp" />
@@ -73,6 +91,7 @@
       <config projectName="slam_in_auto_driving" targetName="roscpp_generate_messages_cpp" />
       <config projectName="slam_in_auto_driving" targetName="tf_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="slam_in_auto_driving" targetName="test_2d_icp_s2s" />
       <config projectName="slam_in_auto_driving" targetName="std_srvs_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="monitor_msgs_gennodejs" />
       <config projectName="slam_in_auto_driving" targetName="monitor_msgs_generate_messages_nodejs" />
@@ -84,24 +103,33 @@
       <config projectName="slam_in_auto_driving" targetName="roscpp_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="monitor_msgs_generate_messages_eus" />
       <config projectName="slam_in_auto_driving" targetName="topic_tools_generate_messages_py" />
+      <config projectName="slam_in_auto_driving" targetName="test_occupancy_grid" />
       <config projectName="slam_in_auto_driving" targetName="actionlib_msgs_generate_messages_cpp" />
       <config projectName="slam_in_auto_driving" targetName="run_imu_integration" />
+      <config projectName="slam_in_auto_driving" targetName="scan_to_range_image" />
       <config projectName="slam_in_auto_driving" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="slam_in_auto_driving" targetName="test_lio_iekf" />
       <config projectName="slam_in_auto_driving" targetName="actionlib_generate_messages_cpp" />
       <config projectName="slam_in_auto_driving" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="slam_in_auto_driving" targetName="test_feature_extraction" />
       <config projectName="slam_in_auto_driving" targetName="download_extra_data" />
       <config projectName="slam_in_auto_driving" targetName="pcl_msgs_generate_messages_cpp" />
       <config projectName="slam_in_auto_driving" targetName="sensor_msgs_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="actionlib_msgs_generate_messages_py" />
       <config projectName="slam_in_auto_driving" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="slam_in_auto_driving" targetName="run_mapping" />
       <config projectName="slam_in_auto_driving" targetName="doxygen" />
       <config projectName="slam_in_auto_driving" targetName="actionlib_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="std_msgs_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="nodelet_topic_tools_gencfg" />
       <config projectName="slam_in_auto_driving" targetName="geometry_msgs_generate_messages_py" />
       <config projectName="slam_in_auto_driving" targetName="std_srvs_generate_messages_nodejs" />
+      <config projectName="slam_in_auto_driving" targetName="test_ndt_lo" />
+      <config projectName="slam_in_auto_driving" targetName="run_fusion_offline" />
+      <config projectName="slam_in_auto_driving" targetName="run_optimization" />
       <config projectName="slam_in_auto_driving" targetName="actionlib_msgs_generate_messages_eus" />
       <config projectName="slam_in_auto_driving" targetName="topic_tools_generate_messages_lisp" />
+      <config projectName="slam_in_auto_driving" targetName="run_frontend" />
       <config projectName="slam_in_auto_driving" targetName="std_msgs_generate_messages_eus" />
       <config projectName="slam_in_auto_driving" targetName="pcl_ros_gencfg" />
       <config projectName="slam_in_auto_driving" targetName="dynamic_reconfigure_generate_messages_lisp" />
@@ -110,19 +138,25 @@
       <config projectName="slam_in_auto_driving" targetName="topic_tools_generate_messages_nodejs" />
       <config projectName="slam_in_auto_driving" targetName="std_srvs_generate_messages_py" />
       <config projectName="slam_in_auto_driving" targetName="actionlib_generate_messages_eus" />
+      <config projectName="slam_in_auto_driving" targetName="run_loopclosure" />
       <config projectName="slam_in_auto_driving" targetName="rosgraph_msgs_generate_messages_nodejs" />
       <config projectName="slam_in_auto_driving" targetName="dynamic_reconfigure_generate_messages_nodejs" />
+      <config projectName="slam_in_auto_driving" targetName="test_2d_icp_likelihood" />
       <config projectName="slam_in_auto_driving" targetName="dynamic_reconfigure_generate_messages_cpp" />
       <config projectName="slam_in_auto_driving" targetName="livox_ros_driver_genpy" />
       <config projectName="slam_in_auto_driving" targetName="velodyne_msgs_generate_messages" />
       <config projectName="slam_in_auto_driving" targetName="std_msgs_generate_messages_nodejs" />
       <config projectName="slam_in_auto_driving" targetName="clean_test_results" />
       <config projectName="slam_in_auto_driving" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="slam_in_auto_driving" targetName="split_map" />
       <config projectName="slam_in_auto_driving" targetName="velodyne_msgs_generate_messages_cpp" />
+      <config projectName="slam_in_auto_driving" targetName="motion_fx_parabola" />
+      <config projectName="slam_in_auto_driving" targetName="test_lio_preinteg" />
       <config projectName="slam_in_auto_driving" targetName="roscpp_generate_messages_py" />
       <config projectName="slam_in_auto_driving" targetName="velodyne_msgs_generate_messages_nodejs" />
       <config projectName="slam_in_auto_driving" targetName="livox_ros_driver_gennodejs" />
       <config projectName="slam_in_auto_driving" targetName="process_gnss" />
+      <config projectName="slam_in_auto_driving" targetName="test_2dlidar_io" />
       <config projectName="slam_in_auto_driving" targetName="_velodyne_msgs_generate_messages_check_deps_VelodyneScanRaw" />
       <config projectName="slam_in_auto_driving" targetName="velodyne_msgs_generate_messages_lisp" />
       <config projectName="slam_in_auto_driving" targetName="sensor_msgs_generate_messages_py" />
@@ -133,6 +167,7 @@
       <config projectName="slam_in_auto_driving" targetName="tf_generate_messages_eus" />
       <config projectName="slam_in_auto_driving" targetName="rosgraph_msgs_generate_messages_cpp" />
       <config projectName="slam_in_auto_driving" targetName="tf_generate_messages_nodejs" />
+      <config projectName="slam_in_auto_driving" targetName="test_icp" />
       <config projectName="slam_in_auto_driving" targetName="velodyne_msgs_genpy" />
       <config projectName="slam_in_auto_driving" targetName="slam_in_auto_driving.tools" />
       <config projectName="slam_in_auto_driving" targetName="monitor_msgs_generate_messages_py" />
@@ -140,6 +175,8 @@
       <config projectName="slam_in_auto_driving" targetName="sensor_msgs_generate_messages_cpp" />
       <config projectName="slam_in_auto_driving" targetName="pcl_msgs_generate_messages_eus" />
       <config projectName="slam_in_auto_driving" targetName="_velodyne_msgs_generate_messages_check_deps_VelodynePacket" />
+      <config projectName="slam_in_auto_driving" targetName="dump_map" />
+      <config projectName="slam_in_auto_driving" targetName="pcd_to_bird_eye" />
       <config projectName="slam_in_auto_driving" targetName="bond_generate_messages_cpp" />
       <config projectName="slam_in_auto_driving" targetName="livox_ros_driver_generate_messages_eus" />
     </generated>
@@ -180,11 +217,12 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "ctest.advertisement.all.test.configuration.is.created": "true",
-    "last_opened_file_path": "/home/wlxing/Codes/slam_in_autonomous_driving/src/ch2",
+    "last_opened_file_path": "/home/wlxing/Codes/catkin_ws/src/event_point_lio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "CMakeSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -193,12 +231,7 @@
       <recent name="$PROJECT_DIR$/src/ch2" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.motion_fx_parabola">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="CMake Application.run_imu_integration">
     <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -214,12 +247,32 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dump_map" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="dump_map" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="dump_map">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="linear_fitting" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="linear_fitting" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="linear_fitting">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="motion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="motion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="motion">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="motion_fx_parabola" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="motion_fx_parabola" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="motion_fx_parabola">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pcd_to_bird_eye" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="pcd_to_bird_eye" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="pcd_to_bird_eye">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="point_cloud_load_and_vis" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="point_cloud_load_and_vis" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="point_cloud_load_and_vis">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -234,7 +287,42 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="run_frontend" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="run_frontend" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="run_frontend">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_fusion_offline" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="run_fusion_offline" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="run_fusion_offline">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_gen_simu_data" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="run_gen_simu_data" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="run_gen_simu_data">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_gins_pre_integ" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="run_gins_pre_integ" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="run_gins_pre_integ">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="run_imu_integration" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="run_imu_integration" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="run_imu_integration">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_loopclosure" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="run_loopclosure" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="run_loopclosure">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_mapping" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="run_mapping" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="run_mapping">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_optimization" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="run_optimization" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="run_optimization">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -244,7 +332,47 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="scan_to_range_image" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="scan_to_range_image" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="scan_to_range_image">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="slam_in_auto_driving.ch10" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="slam_in_auto_driving.ch10" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="slam_in_auto_driving.ch3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="slam_in_auto_driving.ch3" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="slam_in_auto_driving.ch4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="slam_in_auto_driving.ch4" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="slam_in_auto_driving.ch5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="slam_in_auto_driving.ch5" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="slam_in_auto_driving.ch6" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="slam_in_auto_driving.ch6" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="slam_in_auto_driving.ch7" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="slam_in_auto_driving.ch7" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="slam_in_auto_driving.ch8" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="slam_in_auto_driving.ch8" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="slam_in_auto_driving.ch9" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="slam_in_auto_driving.ch9" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -255,6 +383,91 @@
       </method>
     </configuration>
     <configuration name="slam_in_auto_driving.tools" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="slam_in_auto_driving.tools" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="split_map" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="split_map" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="split_map">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_2d_icp_likelihood" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_2d_icp_likelihood" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_2d_icp_likelihood">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_2d_icp_s2s" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_2d_icp_s2s" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_2d_icp_s2s">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_2d_mapping" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_2d_mapping" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_2d_mapping">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_2dlidar_io" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_2dlidar_io" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_2dlidar_io">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_feature_extraction" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_feature_extraction" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_feature_extraction">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_icp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_icp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_icp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_inc_ndt_lo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_inc_ndt_lo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_inc_ndt_lo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_lio_iekf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_lio_iekf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_lio_iekf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_lio_preinteg" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_lio_preinteg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_lio_preinteg">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_loam_odom" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_loam_odom" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_loam_odom">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_loosely_lio" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_loosely_lio" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_loosely_lio">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_mr_matching" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_mr_matching" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_mr_matching">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_ndt_lo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_ndt_lo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_ndt_lo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_nn" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_nn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_nn">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_occupancy_grid" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_occupancy_grid" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_occupancy_grid">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_preintegration" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="slam_in_auto_driving" TARGET_NAME="test_preintegration" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="slam_in_auto_driving" RUN_TARGET_NAME="test_preintegration">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -276,12 +489,48 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="CMake Application.run_fusion_offline" />
+      <item itemvalue="CMake Application.slam_in_auto_driving.ch10" />
       <item itemvalue="CMake Application.motion" />
       <item itemvalue="CMake Application.motion_fx_parabola" />
       <item itemvalue="CMake Application.process_gnss" />
       <item itemvalue="CMake Application.run_eskf_gins" />
       <item itemvalue="CMake Application.run_imu_integration" />
       <item itemvalue="CMake Application.slam_in_auto_driving.ch3" />
+      <item itemvalue="CMake Application.run_gins_pre_integ" />
+      <item itemvalue="CMake Application.slam_in_auto_driving.ch4" />
+      <item itemvalue="CMake Application.test_preintegration" />
+      <item itemvalue="CMake Application.linear_fitting" />
+      <item itemvalue="CMake Application.pcd_to_bird_eye" />
+      <item itemvalue="CMake Application.point_cloud_load_and_vis" />
+      <item itemvalue="CMake Application.scan_to_range_image" />
+      <item itemvalue="CMake Application.slam_in_auto_driving.ch5" />
+      <item itemvalue="CMake Application.test_nn" />
+      <item itemvalue="CMake Application.slam_in_auto_driving.ch6" />
+      <item itemvalue="CMake Application.test_2d_icp_likelihood" />
+      <item itemvalue="CMake Application.test_2d_icp_s2s" />
+      <item itemvalue="CMake Application.test_2d_mapping" />
+      <item itemvalue="CMake Application.test_2dlidar_io" />
+      <item itemvalue="CMake Application.test_mr_matching" />
+      <item itemvalue="CMake Application.test_occupancy_grid" />
+      <item itemvalue="CMake Application.run_gen_simu_data" />
+      <item itemvalue="CMake Application.slam_in_auto_driving.ch7" />
+      <item itemvalue="CMake Application.test_feature_extraction" />
+      <item itemvalue="CMake Application.test_icp" />
+      <item itemvalue="CMake Application.test_inc_ndt_lo" />
+      <item itemvalue="CMake Application.test_loam_odom" />
+      <item itemvalue="CMake Application.test_loosely_lio" />
+      <item itemvalue="CMake Application.test_ndt_lo" />
+      <item itemvalue="CMake Application.slam_in_auto_driving.ch8" />
+      <item itemvalue="CMake Application.test_lio_iekf" />
+      <item itemvalue="CMake Application.test_lio_preinteg" />
+      <item itemvalue="CMake Application.dump_map" />
+      <item itemvalue="CMake Application.run_frontend" />
+      <item itemvalue="CMake Application.run_loopclosure" />
+      <item itemvalue="CMake Application.run_mapping" />
+      <item itemvalue="CMake Application.run_optimization" />
+      <item itemvalue="CMake Application.slam_in_auto_driving.ch9" />
+      <item itemvalue="CMake Application.split_map" />
       <item itemvalue="CMake Application.slam_in_auto_driving.common" />
       <item itemvalue="CMake Application.slam_in_auto_driving.tools" />
       <item itemvalue="CMake Application.ui_test" />
@@ -305,6 +554,7 @@
       <workItem from="1683099258003" duration="17000" />
       <workItem from="1683099280066" duration="3000" />
       <workItem from="1683099530694" duration="899000" />
+      <workItem from="1684388087600" duration="3831000" />
     </task>
     <servers />
   </component>

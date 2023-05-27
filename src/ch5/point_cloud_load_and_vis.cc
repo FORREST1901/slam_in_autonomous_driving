@@ -13,7 +13,7 @@
 using PointType = pcl::PointXYZI;
 using PointCloudType = pcl::PointCloud<PointType>;
 
-DEFINE_string(pcd_path, "./data/ch5/map_example.pcd", "点云文件路径");
+DEFINE_string(pcd_path, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch5/map_example.pcd", "点云文件路径");
 
 /// 本程序可用于显示单个点云，演示PCL的基本用法
 /// 实际上就是调用了pcl的可视化库，类似于pcl_viewer

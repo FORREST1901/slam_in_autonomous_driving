@@ -16,8 +16,8 @@
 #include "common/point_types.h"
 #include "common/sys_utils.h"
 
-DEFINE_string(first_scan_path, "./data/ch5/first.pcd", "第一个点云路径");
-DEFINE_string(second_scan_path, "./data/ch5/second.pcd", "第二个点云路径");
+DEFINE_string(first_scan_path, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch5/first.pcd", "第一个点云路径");
+DEFINE_string(second_scan_path, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch5/second.pcd", "第二个点云路径");
 DEFINE_double(ANN_alpha, 1.0, "AAN的比例因子");
 
 TEST(CH5_TEST, BFNN) {

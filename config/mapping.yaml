@@ -1,7 +1,7 @@
 YAML: 1.0
-bag_path: ./dataset/sad/nclt/20120429.bag
+bag_path: /media/wlxing/Data/ForLinux/Data/sad/nclt/20120429.bag
 lio_yaml: ./config/velodyne_nclt.yaml
-map_data: ./data/ch9/map_data/
+map_data: /home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/map_data/
 origin:
   - 276727.9669506345
   - 4685962.446515145

@@ -8,7 +8,7 @@
 #include "ch6/lidar_2d_utils.h"
 #include "common/io_utils.h"
 
-DEFINE_string(bag_path, "./dataset/sad/2dmapping/test_2d_lidar.bag", "数据包路径");
+DEFINE_string(bag_path, "/media/wlxing/Data/ForLinux/Data/sad/2dmapping/floor1.bag", "数据包路径");
 
 /// 测试从rosbag中读取2d scan并plot的结果
 
@@ -17,6 +17,8 @@ int main(int argc, char** argv) {
     FLAGS_stderrthreshold = google::INFO;
     FLAGS_colorlogtostderr = true;
     google::ParseCommandLineFlags(&argc, &argv, true);
+
+    LOG(INFO) << "bag path: " << FLAGS_bag_path;
 
     sad::RosbagIO rosbag_io(fLS::FLAGS_bag_path);
     rosbag_io

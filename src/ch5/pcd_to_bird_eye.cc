@@ -15,7 +15,7 @@
 using PointType = pcl::PointXYZI;
 using PointCloudType = pcl::PointCloud<PointType>;
 
-DEFINE_string(pcd_path, "./data/ch5/map_example.pcd", "点云文件路径");
+DEFINE_string(pcd_path, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch5/map_example.pcd", "点云文件路径");
 DEFINE_double(image_resolution, 0.1, "俯视图分辨率");
 DEFINE_double(min_z, 0.2, "俯视图最低高度");
 DEFINE_double(max_z, 2.5, "俯视图最高高度");

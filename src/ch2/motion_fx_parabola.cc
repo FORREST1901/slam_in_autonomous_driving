@@ -10,7 +10,7 @@
 #include "tools/ui/pangolin_window.h"
 
 DEFINE_double(init_velocity, 10.0, "init velocity");
-DEFINE_double(init_angle, 75.0, "init angle");
+DEFINE_double(init_angle, 0.0, "init angle");
 DEFINE_double(gravity, -9.8, "gravity acceleration");
 DEFINE_double(angular_velocity, 10.0, "angular velocity");
 DEFINE_double(decay_factor, 0.99, "decay factor");
@@ -45,12 +45,12 @@ int main(int argc, char** argv) {
         pose.translation() += v_world * dt;
         pose.so3() = pose.so3() * SO3::exp(omega * dt);
 
-        // rebound
-        if (pose.translation()[2] < 0) {
-            v_body = v_body * FLAGS_decay_factor;
-            v_body[2] = -v_body[2];
-            pose.translation()[2] = -pose.translation()[2];
-        }
+//        // rebound
+//        if (pose.translation()[2] < 0) {
+//            v_body = v_body * FLAGS_decay_factor;
+//            v_body[2] = -v_body[2];
+//            pose.translation()[2] = -pose.translation()[2];
+//        }
 
         LOG(INFO) << "pose: " << pose.translation().transpose();
         ui.UpdateNavState(sad::NavStated(0, pose, v_body));

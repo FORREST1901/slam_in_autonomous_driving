@@ -35,7 +35,7 @@ class LoopClosing {
         bool valid_ = true;
     };
 
-    LoopClosing() { debug_fout_.open("./data/ch6/loops.txt"); }
+    LoopClosing() { debug_fout_.open("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch6/loops.txt"); }
 
     /// 添加最近的submap，这个submap可能正在构建中
     void AddNewSubmap(std::shared_ptr<Submap> submap);

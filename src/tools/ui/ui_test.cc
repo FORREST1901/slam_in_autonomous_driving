@@ -8,7 +8,7 @@
 
 #include "tools/ui/pangolin_window.h"
 
-DEFINE_string(source, "./data/ch5/first.pcd", "第1个点云路径");
+DEFINE_string(source, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch5/first.pcd", "第1个点云路径");
 
 int main(int argc, char** argv) {
     google::InitGoogleLogging(argv[0]);

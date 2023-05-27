@@ -44,7 +44,7 @@ Optimization::Optimization(const std::string& yaml) { yaml_ = yaml; }
 bool Optimization::Init(int stage) {
     stage_ = stage;
 
-    if (!LoadKeyFrames("./data/ch9/keyframes.txt", keyframes_)) {
+    if (!LoadKeyFrames("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/keyframes.txt", keyframes_)) {
         LOG(ERROR) << "cannot load keyframes.txt";
         return false;
     }
@@ -77,7 +77,7 @@ void Optimization::Run() {
 
     BuildProblem();  // 建立问题
 
-    SaveG2O("./data/ch9/before.g2o");
+    SaveG2O("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/before.g2o");
     LOG(INFO) << "RTK 误差：" << print_info(gnss_edge_, rtk_outlier_th_);
     LOG(INFO) << "RTK 平移误差：" << print_info(gnss_trans_edge_, rtk_outlier_th_);
     LOG(INFO) << "lidar 误差：" << print_info(lidar_edge_, 0);
@@ -86,7 +86,7 @@ void Optimization::Run() {
     RemoveOutliers();  // 移除异常值
     Solve();           // 再求解一遍
 
-    SaveG2O("./data/ch9/after.g2o");
+    SaveG2O("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/after.g2o");
 
     SaveResults();  // 保存结果
     LOG(INFO) << "done";
@@ -290,8 +290,8 @@ void Optimization::SaveResults() {
     LOG(INFO) << "med error: " << rtk_trans_error[rtk_trans_error.size() / 2];
 
     // 写入文件
-    system("rm ./data/ch9/keyframes.txt");
-    std::ofstream fout("./data/ch9/keyframes.txt");
+    system("rm /home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/keyframes.txt");
+    std::ofstream fout("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/keyframes.txt");
     for (auto& kfp : keyframes_) {
         kfp.second->Save(fout);
     }
@@ -348,9 +348,9 @@ void Optimization::InitialAlign() {
 }
 
 void Optimization::LoadLoopCandidates() {
-    std::ifstream fin("./data/ch9/loops.txt");
+    std::ifstream fin("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/loops.txt");
     if (!fin) {
-        LOG(WARNING) << "cannot load file: ./data/ch9/loops.txt";
+        LOG(WARNING) << "cannot load file: /home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/loops.txt";
         return;
     }
 

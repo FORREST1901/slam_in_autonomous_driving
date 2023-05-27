@@ -25,8 +25,8 @@ bool Frontend::Init() {
         return false;
     }
 
-    system("rm -rf ./data/ch9/*.pcd");
-    system("rm -rf ./data/ch9/keyframes.txt");
+    system("rm -rf /home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/*.pcd");
+    system("rm -rf /home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/keyframes.txt");
 
     LioIEKF::Options options;
     options.with_ui_ = false;  // 跑建图不需要打开前端UI
@@ -78,7 +78,7 @@ void Frontend::ExtractKeyFrame(const sad::NavStated& state) {
         // 第一个帧
         auto kf = std::make_shared<Keyframe>(state.timestamp_, kf_id_++, state.GetSE3(), lio_->GetCurrentScan());
         FindGPSPose(kf);
-        kf->SaveAndUnloadScan("./data/ch9/");
+        kf->SaveAndUnloadScan("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/");
         keyframes_.emplace(kf->id_, kf);
         last_kf_ = kf;
     } else {
@@ -88,7 +88,7 @@ void Frontend::ExtractKeyFrame(const sad::NavStated& state) {
             auto kf = std::make_shared<Keyframe>(state.timestamp_, kf_id_++, state.GetSE3(), lio_->GetCurrentScan());
             FindGPSPose(kf);
             keyframes_.emplace(kf->id_, kf);
-            kf->SaveAndUnloadScan("./data/ch9/");
+            kf->SaveAndUnloadScan("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/");
             LOG(INFO) << "生成关键帧" << kf->id_;
             last_kf_ = kf;
         }
@@ -108,7 +108,7 @@ void Frontend::FindGPSPose(std::shared_ptr<Keyframe> kf) {
 }
 
 void Frontend::SaveKeyframes() {
-    std::ofstream fout("./data/ch9/keyframes.txt");
+    std::ofstream fout("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/keyframes.txt");
     for (auto& kfp : keyframes_) {
         kfp.second->Save(fout);
     }

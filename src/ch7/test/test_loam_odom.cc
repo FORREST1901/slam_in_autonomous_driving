@@ -9,7 +9,7 @@
 #include "common/io_utils.h"
 #include "common/timer/timer.h"
 
-DEFINE_string(bag_path, "./dataset/sad/wxb/test1.bag", "path to wxb bag");
+DEFINE_string(bag_path, "/media/wlxing/Data/ForLinux/Data/sad/wxb/test1.bag", "path to wxb bag");
 DEFINE_string(topic, "/velodyne_packets_1", "topic of lidar packets");
 DEFINE_bool(display_map, true, "display map?");
 
@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
                            })
         .Go();
 
-    lo.SaveMap("./data/ch7/loam_map.pcd");
+    lo.SaveMap("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch7/loam_map.pcd");
 
     sad::common::Timer::PrintAll();
     LOG(INFO) << "done.";

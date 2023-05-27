@@ -13,7 +13,7 @@
 using PointType = pcl::PointXYZI;
 using PointCloudType = pcl::PointCloud<PointType>;
 
-DEFINE_string(pcd_path, "./data/ch5/scan_example.pcd", "点云文件路径");
+DEFINE_string(pcd_path, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch5/scan_example.pcd", "点云文件路径");
 DEFINE_double(azimuth_resolution_deg, 0.3, "方位角分辨率（度）");
 DEFINE_int32(elevation_rows, 16, "俯仰角对应的行数");
 DEFINE_double(elevation_range, 15.0, "俯仰角范围");  // VLP-16 上下各15度范围

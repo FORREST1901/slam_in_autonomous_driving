@@ -11,7 +11,7 @@
 #include "tools/ui/pangolin_window.h"
 #include "utm_convert.h"
 
-DEFINE_string(txt_path, "./data/ch3/10.txt", "数据文件路径");
+DEFINE_string(txt_path, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch3/10.txt", "数据文件路径");
 
 // 以下参数仅针对本书提供的数据
 DEFINE_double(antenna_angle, 12.06, "RTK天线安装偏角（角度）");
@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
 
     sad::TxtIO io(fLS::FLAGS_txt_path);
 
-    std::ofstream fout("./data/ch3/gnss_output.txt");
+    std::ofstream fout("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch3/gnss_output.txt");
     Vec2d antenna_pos(FLAGS_antenna_pox_x, FLAGS_antenna_pox_y);
 
     auto save_result = [](std::ofstream& fout, double timestamp, const SE3& pose) {

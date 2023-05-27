@@ -16,7 +16,7 @@
 /**
  * 运行由预积分构成的GINS系统
  */
-DEFINE_string(txt_path, "./data/ch3/10.txt", "数据文件路径");
+DEFINE_string(txt_path, "/home/wlxing/Codes/slam_in_autonomous_driving/data/ch3/10.txt", "数据文件路径");
 DEFINE_double(antenna_angle, 12.06, "RTK天线安装偏角（角度）");
 DEFINE_double(antenna_pox_x, -0.17, "RTK天线安装偏移X");
 DEFINE_double(antenna_pox_y, -0.20, "RTK天线安装偏移Y");
@@ -54,7 +54,7 @@ int main(int argc, char** argv) {
         fout << std::endl;
     };
 
-    std::ofstream fout("./data/ch4/gins_preintg.txt");
+    std::ofstream fout("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch4/gins_preintg.txt");
     bool imu_inited = false, gnss_inited = false;
 
     sad::GinsPreInteg::Options gins_options;

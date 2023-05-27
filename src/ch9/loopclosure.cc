@@ -19,7 +19,7 @@ namespace sad {
 LoopClosure::LoopClosure(const std::string& config_yaml) : yaml_(config_yaml) {}
 
 bool LoopClosure::Init() {
-    if (!LoadKeyFrames("./data/ch9/keyframes.txt", keyframes_)) {
+    if (!LoadKeyFrames("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/keyframes.txt", keyframes_)) {
         LOG(ERROR) << "cannot load keyframes";
         return false;
     }
@@ -119,7 +119,7 @@ void LoopClosure::ComputeForCandidate(sad::LoopCandidate& c) {
 
             auto kf = iter->second;
             CloudPtr cloud(new PointCloudType);
-            pcl::io::loadPCDFile("./data/ch9/" + std::to_string(id) + ".pcd", *cloud);
+            pcl::io::loadPCDFile("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/" + std::to_string(id) + ".pcd", *cloud);
             RemoveGround(cloud, 0.1);
 
             if (cloud->empty()) {
@@ -144,7 +144,7 @@ void LoopClosure::ComputeForCandidate(sad::LoopCandidate& c) {
     auto submap_kf1 = build_submap(kf1->id_, true);
 
     kf2->cloud_.reset(new PointCloudType);
-    pcl::io::loadPCDFile("./data/ch9/" + std::to_string(kf2->id_) + ".pcd", *kf2->cloud_);
+    pcl::io::loadPCDFile("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/" + std::to_string(kf2->id_) + ".pcd", *kf2->cloud_);
     auto submap_kf2 = kf2->cloud_;
 
     if (submap_kf1->empty() || submap_kf2->empty()) {
@@ -189,7 +189,7 @@ void LoopClosure::SaveResults() {
         f << t[0] << " " << t[1] << " " << t[2] << " " << q.x() << " " << q.y() << " " << q.z() << " " << q.w() << " ";
     };
 
-    std::ofstream fout("./data/ch9/loops.txt");
+    std::ofstream fout("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch9/loops.txt");
     for (const auto& lc : loop_candiates_) {
         fout << lc.idx1_ << " " << lc.idx2_ << " " << lc.ndt_score_ << " ";
         save_SE3(fout, lc.Tij_);

@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
     FLAGS_colorlogtostderr = true;
     google::ParseCommandLineFlags(&argc, &argv, true);
 
-    std::ifstream fin("./data/ch6/loops.txt");
+    std::ifstream fin("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch6/loops.txt");
     int loop_id = 0;
 
     while (!fin.eof()) {
@@ -36,13 +36,13 @@ int main(int argc, char** argv) {
         SE2 pose_submap(SO2::exp(theta), center);
 
         mr_field.SetPose(pose_submap);
-        cv::Mat occu_map = cv::imread("./data/ch6/submap_" + std::to_string(submap_id) + ".png", cv::IMREAD_GRAYSCALE);
+        cv::Mat occu_map = cv::imread("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch6/submap_" + std::to_string(submap_id) + ".png", cv::IMREAD_GRAYSCALE);
         cv::Mat occu_map_color =
-            cv::imread("./data/ch6/submap_" + std::to_string(submap_id) + ".png", cv::IMREAD_COLOR);
+            cv::imread("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch6/submap_" + std::to_string(submap_id) + ".png", cv::IMREAD_COLOR);
         mr_field.SetFieldImageFromOccuMap(occu_map);
 
         sad::Frame frame;
-        frame.Load("./data/ch6/frame_" + std::to_string(frame_id) + ".txt");
+        frame.Load("/home/wlxing/Codes/slam_in_autonomous_driving/data/ch6/frame_" + std::to_string(frame_id) + ".txt");
         mr_field.SetSourceScan(frame.scan_);
 
         LOG(INFO) << "testing frame " << frame.id_ << " with " << submap_id;
